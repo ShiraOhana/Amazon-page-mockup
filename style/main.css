@@ -1,0 +1,28 @@
+:root {
+  --price-color: #c23104;
+}
+
+main {
+  max-width: 80%;
+}
+.main-container {
+  display: grid;
+}
+.main-container .small-imgs {
+  display: grid;
+  grid-column: 1 / 12;
+  grid-row: 7/12;
+}
+.main-container .main-img {
+  display: grid;
+  grid-column: 3 /12;
+  grid-row: 8/12;
+
+  border: 1px solid black;
+}
+.main-container .main-text {
+  display: grid;
+  grid-column: 9 / 12;
+  grid-row: 1/12;
+  border: 1px solid black;
+}

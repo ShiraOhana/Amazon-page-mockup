@@ -123,10 +123,17 @@ form:hover {
 .third-navbar {
   background-color: var(--light-grey-bcg);
   display: flex;
+  border: 1px solid #d1d7df;
 }
 .third-navbar li {
   color: var(--light-black-font-color);
   padding: 5px 7px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.third-navbar li:first-child {
+  padding-left: 30px;
+  font-weight: bold;
 }
 .third-navbar li:hover {
   color: var(--orange);
