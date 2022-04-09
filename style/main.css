@@ -1,18 +1,24 @@
 :root {
   --price-color: #c23104;
   --green: #68ae68;
+  --light-grey-bcg: #f3f3f3;
+  --light-black-font-color: #0f1111;
 }
 
 main {
   max-width: 80%;
   margin: 0 auto;
   padding-top: 25px;
+  color: var(--light-black-font-color);
 }
 h1 {
   font-size: 24px;
 }
 .price-red {
   color: var(--price-color);
+}
+.red-font {
+  font-size: 18px;
 }
 .main-container {
   display: grid;
@@ -22,6 +28,11 @@ h1 {
   grid-column: 1 / 12;
   grid-row: 7/12;
 }
+
+.main-container .small-img:hover {
+  border: 3px solid var(--orange);
+}
+
 .main-container .main-img {
   display: grid;
   grid-column: 3 /12;
@@ -33,7 +44,7 @@ h1 {
   display: grid;
   grid-column: 9 / 12;
   grid-row: 9/12;
-  padding: ;
+  padding: 5px;
   /* border: 1px solid black; */
 }
 .small-game-confident {
@@ -46,6 +57,7 @@ h1 {
 }
 a {
   text-decoration: none;
+  color: rgb(91, 157, 197);
 }
 .side-price-add-buy {
   display: grid;
@@ -54,8 +66,47 @@ a {
   border: 1px solid #d5d9d9;
   border-radius: 7px;
   padding: 15px;
+  color: var();
 }
 .green {
   color: var(--green);
   font-weight: 500;
+}
+.big-green {
+  color: var(--green);
+  font-weight: 400;
+  font-size: 20px;
+}
+.quantity {
+  border-radius: 7px;
+  background-color: var(--light-grey-bcg);
+  font-size: 12px;
+  padding: 3px;
+  margin-bottom: 7px;
+}
+.shopping-btn {
+  padding: 5px 80px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  margin: 3px;
+  color: black;
+  background-color: #f7ca00;
+  font-size: 14px;
+}
+.buy-now-btn {
+  background-color: var(--orange);
+  padding: 5px 90px;
+}
+.shopping-btn:hover {
+  cursor: pointer;
+  background-color: #d6b210;
+  transition: all 200ms ease-in-out;
+}
+.buy-now-btn:hover {
+  background-color: #da8e2a;
+}
+.table-side-info {
+  font-size: 12px;
 }
